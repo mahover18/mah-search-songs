@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>maH 楽曲 検索システム 1.0.0</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" href="./img/apple-touch-icon.png">
+	<meta name="apple-mobile-web-app-title" content="楽曲検索">
+	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+
+</head>
+
+<body>
+	<div class="header">maH 楽曲 検索システム</div>
+	<div class="input-group">
+		<input type="text" id="title" placeholder="曲名を入力">
+		<input type="text" id="artist" placeholder="アーティスト名を入力">
+		<select id="genre">
+			<option value="">ジャンルを選択</option>
+			<option value="アニメ">アニメ</option>
+			<option value="ゲーム">ゲーム</option>
+			<option value="ポップス">ポップス</option>
+			<option value="ボカロ">ボカロ</option>
+			<option value="歌謡曲">歌謡曲</option>
+			<option value="バンド">バンド</option>
+			<option value="ヴィジュアル系">ヴィジュアル系</option>
+			<option value="キッズ">キッズ</option>
+			<option value="インスト">インスト</option>
+			<option value="クラシック">クラシック</option>
+			<option value="オリジナル">オリジナル</option>
+			<option value="洋楽">洋楽</option>
+			<!-- 必要に応じてジャンルを追加 -->
+		</select>
+		<input type="text" id="detail" placeholder="アニメのタイトル等を入力">
+		<button onclick="search()">検索</button>
+	</div>
+	<table id="resultTable">
+		<thead></thead>
+		<tbody></tbody>
+	</table>
+	<script src="./setting.js"></script>
+	<script src="./search.js"></script>
+</body>
+
+</html>
